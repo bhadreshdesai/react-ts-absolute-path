@@ -31,26 +31,16 @@ module.exports = aliasWebpack(options);
 module.exports.jest = aliasJest(options);
 ```
 
-Create [tsconfig.paths.json](./tsconfig.paths.json) with the following content
+Add the following in the [tsconfig.json](./tsconfig.json) file under the "compilerOptions"
 
 ```json
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@app/*": ["./src/app/*"],
-      "@libA/*": ["./src/libraries/libA/*"],
-      "@libB/*": ["./src/libraries/libB/*"],
-      "~/*": ["./src/*"]
-    }
-  }
-}
-```
-
-Extend [tsconfig.json](./tsconfig.json) with [tsconfig.paths.json](./tsconfig.paths.json) by adding the following above "compilerOptions"
-
-```json
-"extends": "./tsconfig.paths.json",
+ "baseUrl": ".",
+  "paths": {
+    "@app/*": ["./src/app/*"],
+    "@libA/*": ["./src/libraries/libA/*"],
+    "@libB/*": ["./src/libraries/libB/*"],
+    "~/*": ["./src/*"]
+  },
 ```
 
 Create the following folders with relevant react components
