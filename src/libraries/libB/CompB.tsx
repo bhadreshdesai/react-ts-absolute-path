@@ -1,2 +1,2 @@
-const CompB = (): JSX.Element => <div>Component B from LibB</div>;
+const CompB = (): JSX.Element => <p>Component B from LibB</p>;
 export default CompB;

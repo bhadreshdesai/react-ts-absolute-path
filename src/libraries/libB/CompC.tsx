@@ -3,8 +3,8 @@ import CompB from "@libA/CompB";
 const CompC = (): JSX.Element => (
   <>
     <div>
-      <div>Component C from LibB</div>
-      <div>Using CompA and CompB from LibA</div>
+      <p>Component C from LibB</p>
+      <p>Using CompA and CompB from LibA</p>
       <CompA />
       <CompB />
     </div>

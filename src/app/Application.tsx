@@ -7,13 +7,11 @@ import { default as LibBCompC } from "@libB/CompC";
 
 const Application = (): JSX.Element => (
   <>
-    <div>Application</div>
-    <br />
-    <div>Render components from Lib A</div>
+    <p>Application</p>
+    <p>Render components from Lib A</p>
     <LibACompA />
     <LibACompB />
-    <br />
-    <div>Render components from Lib B</div>
+    <p>Render components from Lib B</p>
     <LibBCompA />
     <LibBCompB />
     <LibBCompC />

@@ -1,6 +1,6 @@
 const CompA = (): JSX.Element => (
   <>
-    <div>Component A from LibB</div>
+    <p>Component A from LibB</p>
   </>
 );
 export default CompA;
